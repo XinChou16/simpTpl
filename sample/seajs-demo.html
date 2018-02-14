@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>seajs-demo</title>
+</head>
+<body>
+
+  <script src="http://apps.bdimg.com/libs/seajs/2.3.0/sea.js"></script>
+  <script>
+    seajs.config({
+        base: "./",
+        alias: {
+            'simpTpl': '../lib/simpTpl'
+        }
+    });
+    // 加载入口模块
+    seajs(['amd-cmd-main']);
+  </script>
+</body>
+</html>

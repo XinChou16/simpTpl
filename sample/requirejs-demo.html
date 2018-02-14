@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>requirejs-demo</title>
+</head>
+<body>
+
+  <script src="http://apps.bdimg.com/libs/require.js/2.1.9/require.min.js"></script>
+  <script>
+    requirejs.config({
+        base: ".",
+        paths: {
+            'simpTpl': '../lib/simpTpl'
+        }
+    });
+    // 加载入口模块
+    requirejs(['amd-cmd-main']);
+    document.write( 'success' );
+  </script>
+</body>
+</html>

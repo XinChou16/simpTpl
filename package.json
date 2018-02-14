@@ -1,0 +1,33 @@
+{
+  "name": "simptpl",
+  "version": "1.0.0",
+  "description": "A easy Javascript template engine",
+  "main": "./lib/simpTpl.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XinChou16/simpTpl.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "template",
+    "engine",
+    "tpl"
+  ],
+  "author": "xin chou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XinChou16/simpTpl/issues"
+  },
+  "homepage": "https://github.com/XinChou16/simpTpl#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  }
+}

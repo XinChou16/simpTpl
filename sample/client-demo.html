@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+</head>
+<body>
+
+  <script src="../lib/simpTpl.js"></script>
+  <script>
+    var tpl = 'hello, I\'m {{name}}, I\'am {{age}} years old';
+    var data = {name:'xinxin',age:'23'};
+    console.log( simpTpl(tpl,data) );
+    document.write( simpTpl(tpl,data) );
+  </script>
+</body>
+</html>
