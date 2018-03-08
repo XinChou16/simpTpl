@@ -12,7 +12,7 @@ var units = [
     name: 'xinxin',
     age: 23,
   },
-  "I'm {{name}}, My age is {{}}",
+  "I'm {{name}}, My age is {{age}}",
   "I'm xinxin, My age is 23"],
   [{
     name: 'xinxin',
@@ -44,7 +44,7 @@ var units = [
 describe('tpl', function() {
   it('should get the string', function () {
     units.forEach( function(testData,index) {
-      assert.equal( testData[1],testData[0],testData[2], 'test'+index+'failed')
+      assert.equal( tpl(testData[1], testData[0]), testData[2], 'test'+index+'failed')
     })
   })
 })
